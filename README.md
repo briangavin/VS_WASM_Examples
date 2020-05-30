@@ -5,7 +5,7 @@
  1.  Install Visual Studio 2019 with CMake check box.  Any version.
  2.  Install Emscripten SDK and remember the installed path.
  3.  Start Visual Studio 2019
- 4.  In Solution Explorer Tabe select the file CMakeSettings.json
+ 4.  In Solution Explorer Tab select the file CMakeSettings.json
  5.  Right click mouse select 'Edit CMake Setting'
  6.  Select 'WASM-Release'  
  7.  Set value for CMAKE_TOOLCHAIN file to location in emscripten sdk for 'Emscripten.cmake' something like upstream/cmake/Modules/Platform/
