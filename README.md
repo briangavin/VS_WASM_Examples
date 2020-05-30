@@ -16,6 +16,6 @@
  12.  Repeat steps for WASM-Debug
  
 Other useful CMAKE variables that can be set in CMakeSettings.json
-a.  CMAKE_EXE_LINKER_FLAGS - command line linker flags
-b.  CMAKE_CXX_FLAGS  - command line flags to pass to clang cpp compiler
-c.  CMAKE_C_FLAGS - command line flags to pass to clang for c compiler
+ 1.  CMAKE_EXE_LINKER_FLAGS - command line linker flags
+ 2.  CMAKE_CXX_FLAGS  - command line flags to pass to clang cpp compiler
+ 3.  CMAKE_C_FLAGS - command line flags to pass to clang for c compiler
