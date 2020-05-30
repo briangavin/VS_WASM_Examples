@@ -8,7 +8,7 @@
  4.  In Solution Explorer Tab select the file CMakeSettings.json
  5.  Right click mouse select 'Edit CMake Setting'
  6.  Select 'WASM-Release'  
- 7.  Set value for CMAKE_TOOLCHAIN file to location in emscripten sdk for 'Emscripten.cmake' something like upstream/cmake/Modules/Platform/
+ 7.  Set value for CMAKE_TOOLCHAIN file to location in emscripten sdk for 'Emscripten.cmake' something like upstream/cmake/Modules/Platform/Emscripten.cmake
  8.  Set value for EMSCRIPTEN_PATH to install path of Emscripten SDK
  9.  Select build menu 'Build All'
  10.  Should generate file HelloWASM\MyFirstWASM.html
