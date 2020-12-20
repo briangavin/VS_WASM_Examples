@@ -4,7 +4,7 @@
       "buildCommandArgs": "",
       "buildRoot": "${projectDir}\\out\\build\\${name}",
       "cmakeCommandArgs": "",
-      "cmakeToolchain": "C:/Program Files/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
+      "cmakeToolchain": "${env.EMSCRIPTEN}/cmake/Modules/Platform/Emscripten.cmake",
       "configurationType": "Release",
       "ctestCommandArgs": "",
       "generator": "Ninja",
@@ -13,13 +13,8 @@
       "name": "WASM - Release",
       "variables": [
         {
-          "name": "EMSCRIPTEN_PATH",
-          "value": "",
-          "type": "STRING"
-        },
-		{
-		  "name": "CMAKE_EXE_LINKER_FLAGS",
-          "value": "-s WASM=1 -O3 --bind -s ALLOW_MEMORY_GROWTH=1 --emit-symbol-map",
+          "name": "CMAKE_EXE_LINKER_FLAGS",
+          "value": "-s WASM=1 -O3 --bind -s ALLOW_MEMORY_GROWTH=1",
           "type": "STRING"
         },
         {
@@ -38,22 +33,17 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "cmakeToolchain": "C:/Program Files/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
+      "cmakeToolchain": "${env.EMSCRIPTEN}/cmake/Modules/Platform/Emscripten.cmake",
       "inheritEnvironments": [ "linux_x64" ],
       "variables": [
         {
-          "name": "EMSCRIPTEN_PATH",
-          "value": "",
-          "type": "STRING"	
-		},
-		{
           "name": "CMAKE_C_FLAGS_DEBUG",
-          "value": "-g4",
+          "value": "-g",
           "type": "STRING"
         },
         {
           "name": "CMAKE_EXE_LINKER_FLAGS",
-          "value": "--bind -s ALLOW_MEMORY_GROWTH=1 --emit-symbol-map --profiling",
+          "value": "--bind -s ALLOW_MEMORY_GROWTH=1",
           "type": "STRING"
         }
       ]

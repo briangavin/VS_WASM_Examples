@@ -3,9 +3,8 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-# set EMSCRIPTEN_PATH in CMakeSettings.json
 include_directories(
-${EMSCRIPTEN_PATH}/system/include/emscripten
+${EMSCRIPTEN}/system/include/emscripten
 )
 
 #add defines here
@@ -15,7 +14,7 @@ add_definitions( )
 add_executable (HelloWASM "HelloWASM.cpp" "HelloWASM.h"  "Hello.cpp" "Hello.h")
 
 # TODO: Add tests and install targets if needed.
-#Have emscripten generate an html file
+# Have emscripten generate an simple example html file
 set_target_properties(
     HelloWASM
     PROPERTIES 
